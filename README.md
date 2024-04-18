@@ -1,4 +1,4 @@
-Uruchomienie:
+Uruchomienie:  
 -> klonujemy repo
 -> Odpalamy Docker Desktop
 -> wchodzimy do folderu repo poprzez terminal bashowy (np.Git Bash)
