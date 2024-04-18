@@ -13,3 +13,4 @@ Uruchomienie:
 -> wzdychamy na pięknie wykonanym zadaniem ;)
 Opcjonalne:
 -> po upewnieniu się, że apka działa ubijamy działające kontenery
+
