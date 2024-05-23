@@ -1,8 +1,8 @@
 Uruchomienie:  
 -> klonujemy repo  
 -> Odpalamy Docker Desktop  
--> wchodzimy do folderu repo poprzez terminal bashowy (np.Git Bash)  
--> uruchamiamy skrypt run.sh poprzez wpisanie "./run.sh"  
+-> wchodzimy do folderu repo poprzez terminal
+-> wpisujemy docker compose up --build
 -> podziwiamy jak tworzą się 3 kontenery:  
 --> Baza postgres  
 --> Aplikacja Experes  
@@ -12,5 +12,4 @@ Uruchomienie:
 --> Testy  
 -> wzdychamy na pięknie wykonanym zadaniem ;)  
 Opcjonalne:  
--> po upewnieniu się, że apka działa ubijamy działające kontenery
-
+-> po upewnieniu się, że apka działa ubijamy działające kontenery korzystając z komendy docker compose down

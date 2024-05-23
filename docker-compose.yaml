@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  db:
+    build: ./db
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5432:5432"
+
+  app:
+    build: ./app
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 1; done; npm start'
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+
+  tests:
+    build: ./testy
+    depends_on:
+      - app
